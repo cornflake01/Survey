@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Coffee Survey Form</h1>
+    <p id="description">Hi, Coffee Lover! Let's identify your favorite cup of coffee!</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" placeholder="Enter a number" min="1" max="100" required>
+
+
+        <label for="dropdown">Select where you prefer to drink your coffee:</label>
+        <select id="dropdown">
+            <option value="home">At home</option>
+            <option value="coffee-shop">At a coffee shop</option>
+        </select>
+        
+        <label for="coffee-frequency">How often do you drink coffee?</label>
+        <select id="coffee-frequency">
+            <option value="daily">Daily</option>
+            <option value="several-times">Several times a week</option>
+            <option value="weekly">Once a week</option>
+            <option value="rarely">Rarely</option>
+            <option value="never">Never</option>
+        </select>
+
+        <fieldset>
+            <legend>Choose your preferred coffee temperature:</legend>
+            <label>
+                <input type="radio" name="coffee-temperature" value="iced-coffee"> Iced Coffee
+            </label>
+            <label>
+                <input type="radio" name="coffee-temperature" value="hot-coffee"> Hot Coffee
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select the type of coffee you like to drink:</legend>
+
+            <label>
+                <input type="checkbox" name="coffee-type" value="espresso"> Espresso
+            </label>
+            <label>
+                <input type="checkbox" name="coffee-type" value="cappuccino"> Cappuccino
+            </label>
+            <label>
+                <input type="checkbox" name="coffee-type" value="latte"> Latte
+            </label>
+            <label>
+                <input type="checkbox" name="coffee-type" value="americano"> Americano
+            </label>
+            <label>
+                <input type="checkbox" name="coffee-type" value="frappuccino"> Frappuccino
+            </label>
+            <label>
+                <input type="checkbox" name="coffee-type" value="macchiato"> Macchiato
+            </label> 
+        </fieldset>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" placeholder="Enter your additional comments regarding your favorite coffee!"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+        <h5>This website is created by <a href=https://github.com/cornflake01/CIT142H.git>Francesca Packing.</h5>
+    </form>
+</body>
+</html>
